@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "site_name": "JEFAD Transnational",
+    "tagline": "Business Solutions • Digital Solutions • Operational Excellence • Hospitality • Water Treatment",
+    "registration_number": "4043573",
+    "phone": "+234 803 651 7291",
+    "email_primary": "jefadtransnational@gmail.com",
+    "email_secondary": "effahdennis@gmail.com",
+    "address": "2 Godwin Nwaeme Street, Meiran, Lagos, Nigeria",
+    "facebook_url": "",
+    "linkedin_url": "",
+    "instagram_url": "",
+    "twitter_url": "",
+    "tiktok_url": "",
+    "whatsapp_url": "",
+
+    "home_hero_eyebrow": "Multidisciplinary Consulting & Digital Solutions",
+    "home_hero_title": "Empowering Businesses Across Africa Through Consulting, Digital Innovation & Sustainable Growth",
+    "home_hero_subtitle": "JEFAD Transnational helps businesses and professionals achieve operational excellence, digital transformation, financial education and sustainable growth — from engineering consulting to digital marketing and executive support.",
+
+    "stat_1_num": "6",
+    "stat_1_label": "Core Service Pillars",
+    "stat_2_num": "4",
+    "stat_2_label": "Countries Served Today",
+    "stat_3_num": "9+",
+    "stat_3_label": "Marketing Channels",
+    "stat_4_num": "RN 4043573",
+    "stat_4_label": "Legal Registration",
+
+    "mission": "To empower businesses and individuals through innovative consulting, practical education, digital transformation, and strategic partnerships.",
+    "vision": "To become one of Africa's most trusted consulting and digital education brands, delivering value across engineering, technology, business and finance.",
+
+    "about_eyebrow": "About Us",
+    "about_title": "We Are a Multidisciplinary Consulting & Digital Solutions Company",
+    "about_paragraph_1": "JEFAD Transnational is a multidisciplinary consulting and digital solutions company focused on helping businesses and professionals achieve operational excellence, digital transformation, financial education and sustainable growth.",
+    "about_paragraph_2": "Our expertise spans engineering consulting, water treatment, food safety and hygiene, virtual assistant services, digital marketing, AI-powered business solutions, hospitality consulting, and professional development.",
+    "about_paragraph_3": "In addition to our consulting services, JEFAD develops educational content and strategic partnerships with reputable organisations to connect individuals and businesses with valuable tools, technologies, and financial solutions.",
+    "about_quote": "Ethical marketing, educational content and long-term client relationships guide everything we do.",
+
+    "home_cta_title": "Let's Discuss Your Business Goals & Schedule A Free Consultation Today",
+    "home_cta_subtitle": "Tell us about your engineering, digital, hospitality or operational challenge and our consultants will get back to you.",
+
+    "footer_about": "A multidisciplinary consulting and digital solutions company helping businesses and professionals achieve operational excellence, digital transformation and sustainable growth across Africa.",
+    "copyright": "JEFAD Transnational. All Rights Reserved."
+  },
+
+  "services": [
+    {
+      "order": 1,
+      "category": "Engineering & Industrial Solutions",
+      "image": "assets/img/service-water.jpg",
+      "icon": "💧",
+      "summary": "Water treatment, food & beverage hygiene and industrial operations consulting for manufacturers and facilities.",
+      "items": ["Water Treatment Consulting", "Boiler Water Treatment", "Cooling Tower Optimisation", "Chiller System Water Treatment", "Swimming Pool Management", "CIP/COP Validation", "Food & Beverage Hygiene", "Operational Audits"]
+    },
+    {
+      "order": 2,
+      "category": "Business Consulting",
+      "image": "assets/img/service-business.jpg",
+      "icon": "💼",
+      "summary": "Operations management and process improvement to help businesses run leaner, safer and more profitably.",
+      "items": ["Operations Management", "Process Improvement", "SOP Development", "Business Advisory", "Project Coordination"]
+    },
+    {
+      "order": 3,
+      "category": "Digital Solutions",
+      "image": "assets/img/service-digital.jpg",
+      "icon": "💻",
+      "summary": "Websites, automation and digital marketing systems that help brands reach and convert their audience.",
+      "items": ["Digital Marketing", "Social Media Management", "Website Development", "AI Business Automation", "CRM Support", "Lead Generation"]
+    },
+    {
+      "order": 4,
+      "category": "Executive Support",
+      "image": "",
+      "icon": "🗓️",
+      "summary": "Reliable virtual assistance so founders and executives can focus on strategy, not admin.",
+      "items": ["Virtual Assistant Services", "Executive Assistance", "Customer Support", "Email Management", "Calendar Management", "Data Management"]
+    },
+    {
+      "order": 5,
+      "category": "Hospitality Services",
+      "image": "assets/img/service-hygiene.jpg",
+      "icon": "🍸",
+      "summary": "Mixology, beverage and hygiene consulting for hotels, bars, restaurants and event teams.",
+      "items": ["Mixology Training", "Beverage Consulting", "Event Beverage Management", "Cleaning and Disinfection"]
+    },
+    {
+      "order": 6,
+      "category": "Professional Development",
+      "image": "assets/img/icon-excellence.jpg",
+      "icon": "🎓",
+      "summary": "Practical training programmes that build digital, operational and career-ready skills.",
+      "items": ["Virtual Assistant Training", "Digital Marketing Training", "AI Productivity Training", "Operations Management", "Career Development"]
+    },
+    {
+      "order": 7,
+      "category": "Digital Income & Marketing Hub",
+      "image": "assets/img/digital-office.jpg",
+      "icon": "📈",
+      "summary": "Education on responsible digital income opportunities, connecting users with reputable platforms.",
+      "items": ["Affiliate Marketing", "CPA Campaign Management & Marketing", "Landing Page Optimisation", "Financial Literacy", "Forex Education", "Lead Generation", "Email Marketing", "Funnel Consulting", "Social Media Marketing", "Digital Advertising Coordination", "Partner Programme Management", "Online Business & Remote Work Opportunities"]
+    }
+  ],
+
+  "lists": {
+    "target_audience": [
+      { "item": "Professionals", "order": 1 },
+      { "item": "Entrepreneurs", "order": 2 },
+      { "item": "SMEs", "order": 3 },
+      { "item": "Manufacturers", "order": 4 },
+      { "item": "Food & Beverage Companies", "order": 5 },
+      { "item": "Students", "order": 6 },
+      { "item": "Job Seekers", "order": 7 },
+      { "item": "Remote Workers", "order": 8 },
+      { "item": "Freelancers", "order": 9 },
+      { "item": "Investors & individuals interested in financial education and online business", "order": 10 }
+    ],
+    "marketing_channels": [
+      { "item": "Company Website", "order": 1 },
+      { "item": "Professional Blog", "order": 2 },
+      { "item": "Facebook", "order": 3 },
+      { "item": "LinkedIn", "order": 4 },
+      { "item": "TikTok", "order": 5 },
+      { "item": "Instagram", "order": 6 },
+      { "item": "X (Twitter)", "order": 7 },
+      { "item": "WhatsApp Business", "order": 8 },
+      { "item": "Email Marketing", "order": 9 },
+      { "item": "SEO", "order": 10 },
+      { "item": "Educational Webinars (planned)", "order": 11 },
+      { "item": "YouTube (planned)", "order": 12 }
+    ],
+    "geography_current": [
+      { "item": "Nigeria", "order": 1 },
+      { "item": "Ghana", "order": 2 },
+      { "item": "Kenya", "order": 3 },
+      { "item": "South Africa", "order": 4 }
+    ],
+    "geography_future": [
+      { "item": "English-speaking Africa", "order": 1 },
+      { "item": "Middle East", "order": 2 },
+      { "item": "Europe", "order": 3 }
+    ],
+    "partnerships": [
+      { "item": "Financial Services", "order": 1 },
+      { "item": "Brokerage Firms", "order": 2 },
+      { "item": "SaaS Companies", "order": 3 },
+      { "item": "AI Technology", "order": 4 },
+      { "item": "Recruitment Platforms", "order": 5 },
+      { "item": "E-learning Providers", "order": 6 },
+      { "item": "Water Treatment Solutions", "order": 7 },
+      { "item": "Industrial Hygiene Solutions", "order": 8 }
+    ],
+    "why_partner": [
+      { "item": "Ethical marketing", "order": 1 },
+      { "item": "Educational and financial content", "order": 2 },
+      { "item": "Long-term client relationships", "order": 3 },
+      { "item": "Transparent communication", "order": 4 },
+      { "item": "Digital innovation", "order": 5 },
+      { "item": "Sustainable business growth", "order": 6 },
+      { "item": "Multi-channel audience engagement", "order": 7 }
+    ],
+    "growth_strategy": [
+      { "item": "Content Marketing", "order": 1 },
+      { "item": "SEO", "order": 2 },
+      { "item": "Social Media Marketing", "order": 3 },
+      { "item": "AI-assisted Content Creation Systems", "order": 4 },
+      { "item": "Community Building", "order": 5 },
+      { "item": "Email Marketing", "order": 6 },
+      { "item": "Paid Advertising (Meta & TikTok)", "order": 7 },
+      { "item": "Strategic Partnerships", "order": 8 }
+    ]
+  }
+}

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Industries &amp; Partnerships | JEFAD Transnational</title>
+<meta name="description" content="See who JEFAD Transnational serves, where we operate across Africa, and the strategic partnerships and growth strategy behind our consulting and digital solutions." />
+<link rel="icon" href="assets/img/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+<style id="jefad-inline-css">
+/* ==========================================================================
+   JEFAD Transnational — site stylesheet
+   Font: Lato (Google Fonts)
+   ========================================================================== */
+
+:root {
+  /* Dark charcoal-green (header strip, hero overlay, dark sections) */
+  --navy-900: #131f1c;
+  --navy-800: #1a2b27;
+  --navy-700: #24413a;
+  --navy-600: #3a6156;
+  /* Muted sage — highlighted card variant */
+  --sage: #5c7267;
+  /* Lime-yellow accent */
+  --orange: #d7e023;
+  --orange-600: #c1c91e;
+  --black: #0a0d0c;
+  --gray-50: #f5f6f2;
+  --gray-100: #edefe8;
+  --gray-300: #dde1d6;
+  --gray-500: #7c8aa0;
+  --text: #1f2a27;
+  --text-light: #5c6b64;
+  --white: #ffffff;
+  --radius: 10px;
+  --shadow: 0 12px 30px rgba(10, 20, 18, 0.14);
+  --shadow-sm: 0 4px 14px rgba(10, 20, 18, 0.10);
+  --container: 1180px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 900;
+  color: var(--navy-900);
+  line-height: 1.25;
+  margin: 0 0 16px;
+}
+
+p { margin: 0 0 16px; color: var(--text-light); }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--orange);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.eyebrow::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: var(--orange);
+  display: inline-block;
+}
+
+.section { padding: 84px 0; }
+.section--tight { padding: 56px 0; }
+.section--navy {
+  background: linear-gradient(120deg, var(--navy-900), var(--navy-700));
+  color: var(--white);
+}
+.section--navy h2, .section--navy h3, .section--navy .eyebrow { color: var(--white); }
+.section--navy p { color: rgba(255,255,255,0.78); }
+.section--gray { background: var(--gray-50); }
+
+.section-head { max-width: 640px; margin-bottom: 44px; }
+.section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+.section-head h2 { font-size: clamp(26px, 3vw, 36px); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.btn-orange { background: var(--orange); color: var(--navy-900); }
+.btn-orange:hover { background: var(--orange-600); }
+.btn-navy { background: var(--navy-800); color: var(--white); }
+.btn-navy:hover { background: var(--navy-900); }
+.btn-outline { border-color: rgba(255,255,255,0.6); color: var(--white); }
+.btn-outline:hover { background: rgba(255,255,255,0.12); }
+.btn-outline-navy { border-color: var(--navy-700); color: var(--navy-700); }
+.btn-outline-navy:hover { background: var(--navy-700); color: var(--white); }
+
+/* ---------- Nav overlay (topbar + header float on top of the hero photo,
+   like the reference template — no white bar above the hero). Fixed so the
+   nav stays reachable while scrolling; turns solid once the hero scrolls
+   past (main.js toggles .solid on scroll) so it stays legible over white
+   page content. ---------- */
+.nav-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: linear-gradient(to bottom, rgba(10,15,14,0.32) 0%, rgba(10,15,14,0.14) 70%, transparent 100%);
+  transition: background .25s ease, box-shadow .25s ease;
+}
+.nav-overlay.solid {
+  background: var(--navy-900);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+/* ---------- Topbar ---------- */
+.topbar {
+  background: transparent;
+  color: rgba(255,255,255,0.85);
+  font-size: 13px;
+}
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.topbar-contacts { display: flex; gap: 22px; flex-wrap: wrap; }
+.topbar-contacts a, .topbar-contacts span { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.85); text-shadow: 0 1px 4px rgba(0,0,0,0.5); }
+.topbar-social { display: flex; gap: 14px; }
+.topbar-social a {
+  width: 26px; height: 26px; border-radius: 50%;
+  background: rgba(255,255,255,0.16);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px;
+  color: var(--white);
+}
+
+/* ---------- Header / nav ---------- */
+.site-header {
+  background: transparent;
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 22px; color: var(--white); text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+.brand img { height: 46px; width: auto; }
+.brand small { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: 1.5px; color: var(--orange); }
+
+.nav { display: flex; align-items: center; gap: 32px; position: relative; }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: rgba(255,255,255,0.92);
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+.nav.open .nav-links a { text-shadow: none; }
+.nav-links a:hover, .nav-links a.active { color: var(--orange); border-bottom-color: var(--orange); }
+.nav-cta { display: flex; align-items: center; gap: 16px; }
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.nav-toggle span { width: 26px; height: 3px; background: var(--white); border-radius: 2px; }
+/* Mobile dropdown panel has its own white background, so its links need
+   dark text regardless of the (transparent/solid) nav-overlay state. */
+.nav.open .nav-links a { color: var(--navy-900); }
+.nav.open .nav-links a:hover, .nav.open .nav-links a.active { color: var(--orange-600); }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  color: var(--white);
+  background: linear-gradient(120deg, var(--navy-900), var(--navy-700));
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.hero::before {
+  /* Light scrim, just enough to keep text legible without darkening the photo */
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(100deg, rgba(10,15,14,0.42) 0%, rgba(10,15,14,0.28) 45%, rgba(10,15,14,0.16) 100%);
+}
+.hero::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle at 88% 15%, rgba(215,224,35,0.14), transparent 45%);
+}
+.hero .container { position: relative; padding-top: 140px; padding-bottom: 110px; }
+.hero-page .container { padding-top: 150px; padding-bottom: 64px; }
+.hero h1 { color: var(--white); font-size: clamp(30px, 4.4vw, 48px); max-width: 720px; text-shadow: 0 2px 10px rgba(0,0,0,0.55); }
+.hero p.lead { color: rgba(255,255,255,0.92); font-size: 17px; max-width: 560px; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+.hero-actions { display: flex; gap: 16px; margin-top: 10px; flex-wrap: wrap; }
+.breadcrumb { position: relative; color: rgba(255,255,255,0.85); font-size: 14px; text-shadow: 0 1px 5px rgba(0,0,0,0.5); }
+.breadcrumb a { color: var(--white); font-weight: 700; }
+.hero .eyebrow, .hero h1, .hero p.lead, .hero .hero-actions { position: relative; }
+.hero .eyebrow { text-shadow: 0 1px 5px rgba(0,0,0,0.5); }
+
+/* ---------- Stat bar ---------- */
+.stat-bar {
+  background: var(--orange);
+  color: var(--white);
+}
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  text-align: center;
+}
+.stat-item { padding: 34px 12px; border-right: 1px solid rgba(255,255,255,0.25); }
+.stat-item:last-child { border-right: none; }
+.stat-num { font-size: 34px; font-weight: 900; }
+.stat-label { font-size: 13.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; opacity: .95; }
+
+/* ---------- Cards ---------- */
+.grid { display: grid; gap: 28px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+
+.service-card { display: flex; flex-direction: column; }
+.service-card .thumb { height: 170px; width: 100%; object-fit: cover; }
+.thumb-fallback {
+  height: 170px;
+  width: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 44px;
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-600));
+  color: var(--white);
+}
+.service-card .body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+.service-card h3 { font-size: 19px; margin-bottom: 10px; }
+.service-card .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 14px; }
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy-800);
+  background: var(--gray-100);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Icon-tile service cards (icon top-left, yellow corner-arrow link top-right) */
+.service-tile {
+  position: relative;
+  background: var(--gray-50);
+  border-radius: 4px;
+  padding: 30px 26px 26px;
+}
+.service-tile.highlight { background: var(--sage); }
+.service-tile.highlight h3, .service-tile.highlight p { color: var(--white); }
+.service-tile.highlight p { color: rgba(255,255,255,0.82); }
+.service-tile .num-icon {
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  border: 1.5px solid var(--navy-900);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+.service-tile.highlight .num-icon { border-color: rgba(255,255,255,0.6); }
+.service-tile .corner-link {
+  position: absolute;
+  top: 22px; right: 22px;
+  width: 34px; height: 34px;
+  background: var(--orange);
+  color: var(--navy-900);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 2px;
+}
+.service-tile h3 { font-size: 18px; margin-bottom: 8px; }
+.service-tile p { font-size: 14px; margin: 0; }
+
+.icon-badge {
+  width: 56px; height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--orange), var(--orange-600));
+  color: var(--navy-900);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+}
+.icon-badge.navy { background: linear-gradient(135deg, var(--navy-800), var(--navy-600)); }
+
+.feature-card { padding: 30px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+.feature-card h4 { font-size: 17px; margin-bottom: 8px; }
+.feature-card p { margin: 0; font-size: 14.5px; }
+
+/* ---------- About split ---------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.about-media { position: relative; }
+.about-media img { border-radius: var(--radius); box-shadow: var(--shadow); }
+.about-media .badge {
+  position: absolute;
+  bottom: -22px; left: 24px;
+  background: var(--navy-800);
+  color: var(--white);
+  padding: 18px 26px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.about-media .badge .num { font-size: 26px; font-weight: 900; color: var(--orange); }
+.about-media .badge .lbl { font-size: 12.5px; font-weight: 700; text-transform: uppercase; }
+.quote-block {
+  border-left: 3px solid var(--orange);
+  padding: 4px 0 4px 18px;
+  font-style: italic;
+  color: var(--text);
+  margin: 20px 0;
+}
+.meta-row { display: flex; align-items: center; gap: 14px; margin: 22px 0; }
+.meta-row .icon { color: var(--orange); font-size: 26px; }
+.meta-row strong { display: block; color: var(--navy-900); font-size: 15px; }
+.meta-row span { font-size: 13.5px; color: var(--text-light); }
+
+/* ---------- List blocks (audience / geography / partnerships) ---------- */
+.chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip {
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  color: var(--navy-800);
+  font-weight: 700;
+  font-size: 13.5px;
+  padding: 9px 16px;
+  border-radius: 30px;
+}
+.check-list li { position: relative; padding-left: 30px; margin-bottom: 12px; font-weight: 600; color: var(--text); }
+.check-list li::before {
+  content: "¹3";
+  position: absolute; left: 0; top: -1px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--white);
+  font-size: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.timeline-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 26px;
+}
+.timeline-card .tag-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.tag-label.current { background: #e4f3ea; color: #1c7a44; }
+.tag-label.future { background: #fdeadb; color: var(--orange-600); }
+
+/* ---------- CTA band ---------- */
+.cta-band {
+  position: relative;
+  color: var(--white);
+  background: linear-gradient(120deg, rgba(10,15,14,0.48), rgba(36,65,58,0.42)), url("../img/digital-office.jpg") center/cover;
+}
+.cta-band .container { padding: 80px 24px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
+.cta-band h2 { color: var(--white); max-width: 520px; font-size: clamp(24px, 3vw, 34px); text-shadow: 0 2px 10px rgba(0,0,0,0.55); }
+.cta-band p { color: rgba(255,255,255,0.9); max-width: 480px; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--black); color: rgba(255,255,255,0.68); }
+.footer-top { padding: 70px 0 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; }
+.footer-brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 21px; color: var(--white); margin-bottom: 16px; }
+.footer-brand img { height: 40px; }
+.site-footer h4 { color: var(--white); font-size: 15px; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 20px; }
+.site-footer ul li { margin-bottom: 12px; font-size: 14.5px; }
+.site-footer ul li a:hover { color: var(--orange); }
+.footer-link::before { content: "¾F"; color: var(--orange); margin-right: 8px; font-size: 11px; }
+.footer-contact li { display: flex; gap: 10px; align-items: flex-start; }
+.footer-contact .ic { color: var(--orange); margin-top: 3px; }
+.footer-social { display: flex; gap: 12px; margin-top: 18px; }
+.footer-social a {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; color: var(--white);
+}
+.footer-social a:hover { background: var(--orange); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px 0;
+  font-size: 13.5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-bottom a:hover { color: var(--orange); }
+
+/* ---------- Contact page ---------- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 44px; }
+.contact-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 26px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+.contact-card .icon-badge { margin-bottom: 0; }
+.contact-card h4 { margin-bottom: 6px; font-size: 16px; }
+.contact-card p { margin: 0; font-size: 14.5px; }
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 36px;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { margin-bottom: 18px; }
+.field label { display: block; font-weight: 700; font-size: 13.5px; color: var(--navy-900); margin-bottom: 7px; }
+.field input, .field select, .field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--gray-300);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14.5px;
+  color: var(--text);
+  background: var(--gray-50);
+}
+.field textarea { min-height: 130px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--navy-600); background: var(--white); }
+.form-note { font-size: 13px; color: var(--text-light); margin-top: 4px; }
+.map-embed { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); margin-top: 24px; }
+.map-embed iframe { width: 100%; height: 280px; border: 0; display: block; }
+
+/* ---------- Data status banner (dev/debug hint, hidden by default) ---------- */
+.data-status {
+  display: none;
+  font-size: 12.5px;
+  text-align: center;
+  padding: 6px 10px;
+  background: #fff3cd;
+  color: #7a5b00;
+}
+.data-status.show { display: block; }
+
+/* ---------- Ring stat / dark CTA band ---------- */
+.ring-section {
+  position: relative;
+  color: var(--white);
+  background: linear-gradient(120deg, rgba(10,15,14,0.46), rgba(19,31,28,0.40)), var(--navy-900);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.ring-section .container {
+  position: relative;
+  padding: 76px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.ring-section .copy { max-width: 440px; }
+.ring-section .eyebrow { color: var(--orange); }
+.ring-section h2 { color: var(--white); font-size: clamp(24px, 3vw, 32px); text-shadow: 0 2px 10px rgba(0,0,0,0.55); }
+.ring-section p { color: rgba(255,255,255,0.88); text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+.ring-grid { display: flex; gap: 30px; flex-wrap: wrap; }
+.ring { text-align: center; width: 108px; }
+.ring svg { display: block; margin: 0 auto 12px; transform: rotate(-90deg); filter: drop-shadow(0 1px 4px rgba(0,0,0,0.5)); }
+.ring .ring-num {
+  font-size: 20px;
+  font-weight: 900;
+  fill: var(--white);
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+.ring .ring-label { font-size: 12.5px; font-weight: 700; color: rgba(255,255,255,0.9); line-height: 1.3; text-shadow: 0 1px 4px rgba(0,0,0,0.5); }
+
+/* ---------- Why choose us — image collage ---------- */
+.collage { position: relative; padding-bottom: 34px; padding-right: 28px; }
+.collage img.main { border-radius: 4px; box-shadow: var(--shadow); width: 100%; }
+.collage img.accent {
+  position: absolute;
+  right: 0; bottom: 0;
+  width: 52%;
+  border: 6px solid var(--white);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+.reason-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 30px; }
+.reason-col .chev {
+  width: 30px; height: 30px;
+  background: var(--orange);
+  color: var(--navy-900);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+.reason-col h4 { font-size: 15.5px; margin-bottom: 6px; }
+.reason-col p { font-size: 13.5px; margin: 0; }
+
+/* ---------- Commitment cards (replaces "testimonials" — no fabricated quotes) ---------- */
+.commitment-card {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+.commitment-card .avatar-icon {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid var(--orange);
+  color: var(--navy-900);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.commitment-card h4 { font-size: 15.5px; margin-bottom: 8px; }
+.commitment-card p { font-size: 14px; margin: 0; }
+
+/* ---------- Newsletter band ---------- */
+.newsletter-band {
+  position: relative;
+  color: var(--white);
+  background: linear-gradient(100deg, rgba(10,15,14,0.48), rgba(19,31,28,0.42)), var(--navy-800);
+  background-size: cover;
+  background-position: center;
+}
+.newsletter-band .container {
+  position: relative;
+  padding: 54px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.newsletter-band h3 { color: var(--white); font-size: 22px; margin-bottom: 6px; text-shadow: 0 2px 8px rgba(0,0,0,0.55); }
+.newsletter-band p { color: rgba(255,255,255,0.88); margin: 0; font-size: 14.5px; text-shadow: 0 1px 5px rgba(0,0,0,0.5); }
+.newsletter-form { display: flex; gap: 0; min-width: 380px; flex: 1; max-width: 480px; }
+.newsletter-form input {
+  flex: 1;
+  padding: 14px 16px;
+  border: none;
+  font-family: inherit;
+  font-size: 14.5px;
+  border-radius: 3px 0 0 3px;
+}
+.newsletter-form button {
+  border: none;
+  padding: 14px 24px;
+  background: var(--orange);
+  color: var(--navy-900);
+  font-weight: 800;
+  font-size: 13.5px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.newsletter-form button:hover { background: var(--orange-600); }
+
+/* ---------- Utilities ---------- */
+.mt-0 { margin-top: 0 !important; }
+.text-center { text-align: center; }
+.pill-list { display:flex; flex-wrap:wrap; gap:10px; margin-bottom: 26px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 960px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .split { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .reason-cols { grid-template-columns: 1fr 1fr; }
+  .collage { padding-right: 0; margin-bottom: 20px; }
+}
+
+@media (max-width: 760px) {
+  .nav-links, .nav-cta .btn-outline-navy { display: none; }
+  .nav-toggle { display: flex; }
+  .nav.open .nav-links {
+    display: flex;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 18px 24px;
+    gap: 14px;
+    box-shadow: var(--shadow);
+  }
+  .topbar-contacts span:nth-child(2) { display: none; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.25); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .reason-cols { grid-template-columns: 1fr; }
+  .ring-section .container, .newsletter-band .container { flex-direction: column; align-items: flex-start; text-align: left; }
+  .ring-grid { width: 100%; justify-content: space-between; }
+  .ring { width: auto; flex: 1 1 40%; }
+  .newsletter-form { min-width: 0; width: 100%; }
+  .cta-band .container { flex-direction: column; text-align: center; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="data-status" id="dataStatus"></div>
+
+<div class="nav-overlay">
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-contacts">
+      <a data-bind-href="settings.email_primary" href="mailto:jefadtransnational@gmail.com">✉ <span data-bind="settings.email_primary">jefadtransnational@gmail.com</span></a>
+      <a data-bind-href="settings.phone" href="tel:+2348036517291">☎ <span data-bind="settings.phone">+234 803 651 7291</span></a>
+    </div>
+    <div class="topbar-social">
+      <a href="#" data-social="facebook_url" aria-label="Facebook">f</a>
+      <a href="#" data-social="twitter_url" aria-label="X / Twitter">x</a>
+      <a href="#" data-social="linkedin_url" aria-label="LinkedIn">in</a>
+      <a href="#" data-social="instagram_url" aria-label="Instagram">ig</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.png" alt="JEFAD Transnational logo" />
+      <span>JEFAD<br /><small>TRANSNATIONAL</small></span>
+    </a>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="industries.html">Industries &amp; Partners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-orange">Get a Quote</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+</div>
+<section class="hero hero-page" style="background-image:url('assets/img/service-digital-bg.jpg')">
+  <div class="container">
+    <h1>Industries &amp; Partnerships</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Industries &amp; Partnerships</p>
+  </div>
+</section>
+
+<!-- Target audience -->
+<section class="section--tight">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Who We Serve</span>
+      <h2>Our Target Audience</h2>
+      <p>We support the people and businesses driving Africa's next stage of growth.</p>
+    </div>
+    <div id="audience-chips" class="chip-list" style="justify-content:center;"></div>
+  </div>
+</section>
+
+<!-- Geography -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Geographic Focus</span>
+      <h2>Where We Operate</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="timeline-card">
+        <span class="tag-label current">Current</span>
+        <div id="geo-current" class="chip-list"></div>
+      </div>
+      <div class="timeline-card">
+        <span class="tag-label future">Future Expansion</span>
+        <div id="geo-future" class="chip-list"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partnerships -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Strategic Partnerships</span>
+        <h2>Who We Partner With</h2>
+        <p>JEFAD builds long-term relationships with organisations that share our commitment to ethical, educational and sustainable growth.</p>
+        <div id="partnership-chips" class="chip-list"></div>
+      </div>
+      <div>
+        <img src="assets/img/icon-partnership.jpg" alt="Strategic partnership" style="border-radius:10px; box-shadow:var(--shadow);" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Growth strategy -->
+<section class="section section--navy">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Growth Strategy</span>
+      <h2>How We Build Sustainable Reach</h2>
+    </div>
+    <div id="growth-grid" class="grid grid-4"></div>
+  </div>
+</section>
+
+<!-- Marketing channels -->
+<section class="section--tight">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Marketing Channels</span>
+      <h2>Where You'll Find Us</h2>
+    </div>
+    <div id="channel-chips" class="chip-list" style="justify-content:center;"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>Interested In Partnering With JEFAD?</h2>
+      <p>Financial services, SaaS, e-learning or industrial hygiene &amp; water treatment partners are always welcome.</p>
+    </div>
+    <a href="contact.html" class="btn btn-orange">Start The Conversation →</a>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter-band" style="background-image:url('assets/img/digital-office.jpg')">
+  <div class="container">
+    <div>
+      <h3>Newsletter</h3>
+      <p>Sign up to get consulting tips, digital growth ideas and JEFAD updates in your inbox.</p>
+    </div>
+    <form class="newsletter-form" id="newsletter-form">
+      <input type="email" name="email" placeholder="Your email address" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/img/logo.png" alt="JEFAD logo" /> JEFAD Transnational</div>
+        <p data-bind="settings.footer_about">A multidisciplinary consulting and digital solutions company helping businesses and professionals achieve operational excellence, digital transformation and sustainable growth across Africa.</p>
+        <div class="footer-social">
+          <a href="#" data-social="facebook_url">f</a>
+          <a href="#" data-social="twitter_url">x</a>
+          <a href="#" data-social="linkedin_url">in</a>
+          <a href="#" data-social="instagram_url">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="services.html" class="footer-link">Our Services</a></li>
+          <li><a href="industries.html" class="footer-link">Industries &amp; Partners</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul id="footer-services"></ul>
+      </div>
+      <div>
+        <h4>Head Office</h4>
+        <ul class="footer-contact">
+          <li><span class="ic">📍</span><span data-bind="settings.address">2 Godwin Nwaeme Street, Meiran, Lagos, Nigeria</span></li>
+          <li><span class="ic">☎</span><span data-bind="settings.phone">+234 803 651 7291</span></li>
+          <li><span class="ic">✉</span><span data-bind="settings.email_primary">jefadtransnational@gmail.com</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span data-year>2026</span> <span data-bind="settings.copyright">JEFAD Transnational. All Rights Reserved.</span></span>
+    <span>Data-driven site — content managed via Google Sheets</span>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/render.js"></script>
+<script>
+  document.addEventListener("jefad:data-ready", function (e) {
+    var data = e.detail;
+    var lists = data.lists || {};
+    JEFAD_UI.chipList(document.getElementById("audience-chips"), lists.target_audience || []);
+    JEFAD_UI.chipList(document.getElementById("geo-current"), lists.geography_current || []);
+    JEFAD_UI.chipList(document.getElementById("geo-future"), lists.geography_future || []);
+    JEFAD_UI.chipList(document.getElementById("partnership-chips"), lists.partnerships || []);
+    JEFAD_UI.chipList(document.getElementById("channel-chips"), lists.marketing_channels || []);
+
+    var growthGrid = document.getElementById("growth-grid");
+    var icons = ["✍️", "🔍", "📱", "🤖", "👥", "📧", "📢", "🤝"];
+    if (growthGrid && lists.growth_strategy) {
+      growthGrid.innerHTML = "";
+      lists.growth_strategy.forEach(function (row, i) {
+        var card = JEFAD_UI.el("div", "feature-card", "");
+        card.style.background = "rgba(255,255,255,0.06)";
+        card.style.boxShadow = "none";
+        var badge = JEFAD_UI.el("div", "icon-badge", icons[i % icons.length]);
+        card.appendChild(badge);
+        var h4 = JEFAD_UI.el("h4", null, row.item);
+        h4.style.color = "#fff";
+        card.appendChild(h4);
+        growthGrid.appendChild(card);
+      });
+    }
+
+    var footerServices = document.getElementById("footer-services");
+    if (footerServices && data.services) {
+      footerServices.innerHTML = "";
+      data.services.slice(0, 6).forEach(function (s) {
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = "services.html";
+        a.className = "footer-link";
+        a.textContent = s.category;
+        li.appendChild(a);
+        footerServices.appendChild(li);
+      });
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+section,item,order
+target_audience,Professionals,1
+target_audience,Entrepreneurs,2
+target_audience,SMEs,3
+target_audience,Manufacturers,4
+target_audience,Food & Beverage Companies,5
+target_audience,Students,6
+target_audience,Job Seekers,7
+target_audience,Remote Workers,8
+target_audience,Freelancers,9
+target_audience,Investors & individuals interested in financial education and online business,10
+marketing_channels,Company Website,1
+marketing_channels,Professional Blog,2
+marketing_channels,Facebook,3
+marketing_channels,LinkedIn,4
+marketing_channels,TikTok,5
+marketing_channels,Instagram,6
+marketing_channels,X (Twitter),7
+marketing_channels,WhatsApp Business,8
+marketing_channels,Email Marketing,9
+marketing_channels,SEO,10
+marketing_channels,Educational Webinars (planned),11
+marketing_channels,YouTube (planned),12
+geography_current,Nigeria,1
+geography_current,Ghana,2
+geography_current,Kenya,3
+geography_current,South Africa,4
+geography_future,English-speaking Africa,1
+geography_future,Middle East,2
+geography_future,Europe,3
+partnerships,Financial Services,1
+partnerships,Brokerage Firms,2
+partnerships,SaaS Companies,3
+partnerships,AI Technology,4
+partnerships,Recruitment Platforms,5
+partnerships,E-learning Providers,6
+partnerships,Water Treatment Solutions,7
+partnerships,Industrial Hygiene Solutions,8
+why_partner,Ethical marketing,1
+why_partner,Educational and financial content,2
+why_partner,Long-term client relationships,3
+why_partner,Transparent communication,4
+why_partner,Digital innovation,5
+why_partner,Sustainable business growth,6
+why_partner,Multi-channel audience engagement,7
+growth_strategy,Content Marketing,1
+growth_strategy,SEO,2
+growth_strategy,Social Media Marketing,3
+growth_strategy,AI-assisted Content Creation Systems,4
+growth_strategy,Community Building,5
+growth_strategy,Email Marketing,6
+growth_strategy,Paid Advertising (Meta & TikTok),7
+growth_strategy,Strategic Partnerships,8
