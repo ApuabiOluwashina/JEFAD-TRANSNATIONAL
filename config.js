@@ -8,7 +8,7 @@
 window.JEFAD_CONFIG = {
   // Paste the long ID from your Google Sheet URL here, e.g.
   // https://docs.google.com/spreadsheets/d/  1AbCdEfGhIjKlMnOpQrStUvWxYz  /edit
-  SHEET_ID: "1BATYzUHcXm_UoZORD_4jCPvNZ6mKVBAu91Zh5_s2QTs",
+  SHEET_ID: "https://script.google.com/macros/s/AKfycbyD7B3k9lsoudQ4ZsPoS8B6RL17YEkGmFpG5KSxSSIaG5OVXkBg0GvS3j3B9aul1-pA/exec",
 
   // Tab (sheet) names inside that spreadsheet — change only if you rename tabs.
   TABS: {
